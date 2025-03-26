@@ -251,3 +251,12 @@ git status
 2. 添加 `Branch protection rules`：
    - 勾选 `Require a pull request before merging` 禁止直接推送到 `main`。
    - 勾选 `Require approvals` 需要主创或管理员审核后才能合并。
+
+
+
+### 0.0 附记（非新手向，仅用作备忘）
+
+####		20250326
+
+		1. 使用git commit -m时，若在此之前使用了git add .命令，则-m参数会作用于工作目录中的所有文件。为了避免污染提交记录，请尽可能避免这两个代码同时使用！
+		1. 如果在https连接方式下使用git出现connect reset情况，建议改为ssh连接（git remote set-url origin git@github.com:username/repo.git）。
